@@ -1,0 +1,22 @@
+<% include css_bt.ejs%>
+
+<% include nav.ejs%>
+
+<hr>
+
+<form method="post" action="/edit" enctype="application/x-www-form-urlencoded" class="mt-5 container">
+    <div class="mb-3">
+        <label class="form-label">Tên Ảnh</label>
+        <input name="ten" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nội Dung</label><br>
+        <textarea name="noidung" type="text" class="form-control" id="exampleFormTextArea" rows="3"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Link ảnh</label><br>
+        <input class="form-control" type="text" name="link" required="required"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Sửa</button>
+</form>
